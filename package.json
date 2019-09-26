@@ -5,7 +5,9 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Hola mundo\"",
-    "serve": "onchange 'C:/Users/48691923A/Desktop/nba-project/src/*.php' -- C:/Users/48691923A/Desktop/nba-project/deploy/deploy.sh"
+    "deploy": "npm run build && .\\scripts\\deploy.sh",
+    "serve": "onchange ./src/**/* -- npm run deploy",
+    "build": ".\\scripts\\build.sh"
   },
   "author": "",
   "license": "ISC",
