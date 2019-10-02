@@ -5,9 +5,9 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Hola mundo\"",
-    "deploy": "npm run build && .\\scripts\\deploy.sh",
+    "deploy": "npm run build && sh ./scripts/deploy.sh",
     "serve": "onchange ./src/**/* -- npm run deploy",
-    "build": ".\\scripts\\build.sh"
+    "build": "sh ./scripts/build.sh"
   },
   "author": "",
   "license": "ISC",
